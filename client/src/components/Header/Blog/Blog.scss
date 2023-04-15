@@ -1,0 +1,92 @@
+@import "../../../css-config/mixins.scss";
+
+.blog-banner {
+    padding: 40px 0;
+    position: relative;
+    background-image: url("../../../assets/blog-banner.png");
+
+    @include md {
+        height: calc(100vh - 63px);
+    }
+
+    .content {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column-reverse;
+        max-width: calc(100vh - 20px);
+        margin: 0 auto;
+        position: relative;
+
+        @include md {
+            flex-direction: row;
+            max-width: 1200px;
+        }
+
+        .blog-banner {
+            z-index: 9;
+            width: 200px;
+            margin-bottom: 20px;
+
+            @include md {
+                position: relative;
+                bottom: 25px;
+                width: 500px;
+                margin-right: 60px;
+                margin-top: 50px;
+                margin-bottom: 0;
+            }
+
+            @include xxl {
+                width: 600px;
+                margin-right: 0;
+                margin-top: 0;
+            }
+        }
+
+        .text-content {
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include md {
+                position: absolute;
+                left: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            @include xxl {
+                left: 0;
+            }
+
+            h1 {
+                font-size: 80px;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 20px;
+
+                @include md {
+                    font-size: 100px;
+                }
+            }
+
+            p {
+                max-width: 300px;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 20px;
+
+                @include md {
+                    max-width: 500px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

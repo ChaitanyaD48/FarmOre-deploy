@@ -1,0 +1,147 @@
+@import "../../css-config/mixins.scss";
+.single-product-main-content{
+    margin: 20px 0;
+    @include md{
+        margin: 75px 0;
+    }
+    .layout{
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        @include md{
+            max-width: 1200px;
+        }
+        .single-product-page{
+            display: flex;
+            flex-direction: column;
+            @include md{
+                flex-direction: row;
+            }
+            .left{
+                width: 100%;
+                background-color: rgba(0,0,0,0.05);
+                flex-shrink: 0;
+                @include md{
+                    width: 600px;
+                    height: 600px;
+                }
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                @include md{
+                    padding: 0 35px;
+                }
+                .name{
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                    @include md{
+                        font-size: 24px;
+                        line-height: 32px;
+                    }
+                }
+                .price{
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                }
+                .desc{
+                    
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                    color: #6b6b6b;
+                    @include md{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+
+                .cart-buttons{
+                    display: flex;
+                    @include md{
+                        margin-top: 30px;
+                    }
+                    .quantity-buttons{
+                        width: fit-content;
+                        display: flex;
+                        border: 2px solid rgba(0,0,0,0.2);
+                        margin-right: 10px;
+                        height: 50px;
+                        span{
+                            font-size: 18px;
+                            width: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            color: #6b6b6b;
+                            &:nth-child(1){
+                                border-right: 2px solid rgba(0,0,0,0.2);
+                            }
+                            
+                            &:nth-child(2){
+                                width : 60px;
+                            }
+                            
+                            &:nth-child(3){
+                                border-left: 2px solid rgba(0,0,0,0.2);
+                            }
+                            
+                        }
+                    }
+                    .add-to-cart-button{
+                        outline: 0;
+                        border: 0;
+                        height: 50px;
+                        width: 180px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: white;
+                        background: #38E54D;
+                        border-bottom: 3px solid #9CFF2E;
+                        flex-grow: 1;
+                        @include md{
+                            flex-grow: unset;
+                        }
+                    }
+                }
+
+                .divider{
+                    margin: 20px 0;
+                    height: 1px;
+                    width: 100%;
+                    background-color: rgba(0,0,0,0.1);
+                }
+
+                .info-item{
+                    .text-bold{
+                        font-size: 18px;
+                        font-weight: 500;
+                        display: block;
+                        &:nth-child(1){
+                            margin-bottom: 20px;
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 400;
+                            cursor: pointer;
+                            color: #6b6b6b;
+                        }
+                        svg{
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

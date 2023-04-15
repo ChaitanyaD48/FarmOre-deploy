@@ -1,0 +1,138 @@
+@import "../../css-config/mixins.scss";
+.cart-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+    .opac-layer{
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .cart-content{
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        animation: slideCartWindow 0.3s ease forwards;
+        @include md{
+            width: 340px;
+        }
+        .cart-header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 20px 15px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            .heading{
+                flex-grow: 1;
+                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+
+            }
+            .close-btn{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                cursor: pointer;
+                svg{
+                    font-size: 18px;
+                }
+                .text{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .empty-cart{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 100px;
+            svg{
+                font-size: 120px;
+                opacity: 0.1;
+            }
+            .return-cta{
+                        outline: 0;
+                        border: 0;
+                        height: 40px;
+                        width: 150px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        font-size: 13px;
+                        color: white;
+                        background: #38E54D;
+                        border-bottom: 3px solid #9CFF2E;
+                        
+                        
+            }
+        }
+
+        .cart-footer{
+            border-top: 1px solid rgba(0,0,0,0.1);
+            .subtotal{
+                padding: 20px 15px;
+                border-bottom:1px solid rgba(0,0,0,0.1) ;
+                display: flex;
+                justify-content: space-between;
+                .text{
+                    margin-bottom: 0;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    &.total{
+                        color: #9CFF2E;
+                    }
+                }
+            }
+            .button{
+                padding: 20px 15px;
+                .checkout-cta{
+                    outline: 0;
+                        border: 0;
+                        height: 50px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        font-size: 16px;
+                        color: white;
+                        background: #38E54D;
+                        border-bottom: 3px solid #9CFF2E;
+                        
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes slideCartWindow{
+    0%{
+        transform: translateX(100%);
+     }100%{
+        transform: translateX(0);
+    }
+}

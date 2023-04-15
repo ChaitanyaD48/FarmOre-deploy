@@ -1,0 +1,91 @@
+@import "../../css-config/mixins.scss";
+.main-header {
+    width: 100%;
+    //position: fixed;
+    // padding: 2px 20px 0 20px;
+    padding: 20px 0;
+    background-color: #212121;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    @include md{
+        padding: 0 40px;
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+        max-width: 1200px;
+        margin: 0 auto;
+        @include md{
+            height: 60px;      //Atharv se bolna hai
+        }
+        .left {
+            list-style-type: none;
+            display: none;
+            gap: 25px;
+            @include md{
+                display: flex;
+            }
+            li{
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+
+        .center {
+            font-size: 22px;
+            font-weight: 700;
+            cursor: pointer;
+            @include md{
+                font-size: 34px;
+                position: absolute;
+                right: 45%;     //Atharv se ye karne ka bolna
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include md{
+                gap: 25px;
+            }
+            svg{
+                font-size: 20px;
+                cursor: pointer;
+                @include md{
+                    font-size: 24px;
+                }
+            }
+            .cart-icon{
+                position: relative;
+                span{
+                    min-width: 20px;
+                    text-align: center;
+                    background-color: #38E54D;
+                    padding: 2.5px;
+                    position: absolute;
+                    top: -5px;
+                    right: -12px;
+                    font-size: 12px;
+                    line-height: 1;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &.sticky-header{
+            position: sticky;
+            top: 0;
+            animation: stickyHeader .3s ease forwards;
+            transform:translateY(-80px);
+        }
+    }
+}
+@keyframes stickyHeader {
+    0%{transform:translateY(-80px);}
+    100%{transform:translateY(0);}
+}

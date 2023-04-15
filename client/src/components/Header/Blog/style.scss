@@ -1,0 +1,153 @@
+$color_1: black;
+$color_2: var(--main-bg-color);
+$color_3: white;
+$font-family_1: var(--font1);
+$font-family_2: var(--font2);
+$background-color_1: rgb(248, 239, 239, 0.5);
+$background-color_2: var(--main-bg-color);
+
+/* .home-articles{} */
+* {
+	margin: 0;
+	padding: 0;
+}
+.navigation {
+	// background-image: url("./blog-banner.png");
+	margin-top: 25px;
+	font-family: $font-family_1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-left {
+	display: flex;
+	span {
+		font-size: 35px;
+		padding-top: 10px;
+	}
+	ul {
+		display: flex;
+		align-items: center;
+		margin: 0 77px;
+		font-size: 22px;
+		padding-bottom: 23px;
+		li {
+			list-style: none;
+			margin: 0 14px;
+			font-family: $font-family_2;
+			transition: all 0.3s ease-in-out;
+			a {
+				text-decoration: none;
+				color: $color_1;
+				&:hover {
+					color: $color_2;
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+}
+.content {
+	height: 100%;
+	display: flex;
+	margin-top: 32px;
+	padding: 9px;
+	position: relative;
+	&::after {
+		content: "";
+		//background-image: url("../img/11.svg");
+		position: absolute;
+		width: 100%;
+		height: inherit;
+		opacity: 0.15;
+		border-radius: 12px;
+	}
+}
+.content-left {
+	font-family: $font-family_1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 49px;
+	z-index: 1;
+}
+.content-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		height: 355px;
+		border: 2px solid black;
+		border-radius: 200px;
+	}
+}
+.home-articles {
+	padding: 18px;
+	background-color: $background-color_1;
+	margin-top: 23px;
+	position: relative;
+}
+.year-box {
+	position: absolute;
+	right: 0px;
+	top: 100px;
+	width: 234px;
+	height: 255px;
+	font-size: 18px;
+	div {
+		margin: 12px 0px;
+	}
+}
+.home-article-img {
+	display: flex;
+	margin: 50px;
+	block-size: 100px;
+}
+.home-article-content {
+	position: relative;
+	bottom: 175px;
+	float: right;
+	align-self: center;
+	padding: 25px;
+	a {
+		cursor: pointer;
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.a{
+position: relative;
+right: 123px;
+}
+.b{
+	position: relative;
+	right: 130px;
+}
+.c{
+	position: relative;
+	right: 95px;
+}
+.d{
+	position: relative;
+	right: 160px;
+}
+.e{
+	position: relative;
+	right: 50px;
+}
+.f{
+	position: relative;
+	right: 220px;
+}
+.footer {
+	height: 50px;
+	background-color: $background-color_2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $color_3;
+	flex-direction: column;
+	a {
+		color: $color_3;
+	}
+}
