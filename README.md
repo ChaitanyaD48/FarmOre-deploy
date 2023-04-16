@@ -35,6 +35,7 @@ open another terminal and enter the following commands
 ![image](https://user-images.githubusercontent.com/96743681/232310725-23d2209d-cf5d-483d-aa5f-bb1941f8ebd3.png)
 ![image](https://user-images.githubusercontent.com/96743681/232311764-ae4f6caf-810c-4006-bdaf-db6f350e4291.png)
 ![image](https://user-images.githubusercontent.com/96743681/232310989-40c95510-4c1a-4bca-9ffd-522e581f48f4.png)
+![image](https://user-images.githubusercontent.com/96743681/232326842-f7bae20a-4fcd-4f18-a9d7-c73a03804438.png)
 ![image](https://user-images.githubusercontent.com/96743681/232311178-0d4e227c-47ca-44a2-bf60-030cfd6ce7e7.png)
 ![image](https://user-images.githubusercontent.com/96743681/232312097-97b0b079-4225-4a7f-84b2-a0c5f39cd2cb.png)
 
