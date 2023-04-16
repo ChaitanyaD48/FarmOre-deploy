@@ -33,6 +33,7 @@ open another terminal and enter the following commands
 ![image](https://user-images.githubusercontent.com/96743681/232310120-417fcea7-87eb-41ed-b1df-af192cfe0d1f.png)
 ![image](https://user-images.githubusercontent.com/96743681/232310554-6bdcaadc-aa43-4481-bc41-9f455ab5aee2.png)
 ![image](https://user-images.githubusercontent.com/96743681/232310725-23d2209d-cf5d-483d-aa5f-bb1941f8ebd3.png)
+![image](https://user-images.githubusercontent.com/96743681/232326911-32204cc0-1a44-41c9-97f5-45c70f21cae5.png)
 ![image](https://user-images.githubusercontent.com/96743681/232311764-ae4f6caf-810c-4006-bdaf-db6f350e4291.png)
 ![image](https://user-images.githubusercontent.com/96743681/232310989-40c95510-4c1a-4bca-9ffd-522e581f48f4.png)
 ![image](https://user-images.githubusercontent.com/96743681/232326842-f7bae20a-4fcd-4f18-a9d7-c73a03804438.png)
