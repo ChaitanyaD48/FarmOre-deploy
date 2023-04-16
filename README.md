@@ -2,7 +2,7 @@
 ---
 FarmOre is a farmer-friendly website that provides items from categories such as fruits and vegetables, groceries, seeds and fertilizers, and farm equipments, from one farm to another, building a connection between one and the other farmer(s) and bridging the gap between consumers and farmers. FarmOre aims in innovating the traditional Supply Chain system and introducing Tech in the Field of Agriculture which not only will reduce the wastage of Farm Products like Vegetables, Fruits, etc and also build a trust between an User and Farmer. Farmore is not only intended for the use of buyers but also for Farmers to buy various Farm Equipments, Pesicides and other required Items. We offer a live search feature so that users can browse a predetermined selection of products to find the ones they need. Each product has a comprehensive description and the name of the farm or business that is eager to sell it. Moreover, an online shopping cart feature keeps track of all the items the user intends to buy. We have also introduced a blog section where they can find numerous articles about farming and its varied practices. They would gain in-depth knowledge of the studies being conducted in their particular fields and access to the newest technologies that they could apply to increase yield. 
 <br>
-<br>Our website uses React framework along with Strapi headless CMS, which allows a multi-database support and provides a marketplace plugins along with customizable API calls while the blog website uses React Framework, HTML for code structuring and CSS for styling.
+<br>Our website uses React framework along with Strapi headless CMS, which allows a multi-database support and provides a marketplace plugins along with customizable API calls while the blog website uses React Framework, HTML for code structuring and CSS for styling. We have chosen the T2D series of processors, powered by AMD EPYC Milan CPU platform and has AMD instance type as t2d-standard-2, consisting of 2 vCPUs and 8 GB memory. Moreover, we have employed the use of Compute Engine Service and Cloud Build API from Google Cloud Services.
 <br>
 ## Run the following commands in the terminal to use this app locally.
 Before that, please install some basic pre-requisites!
@@ -41,5 +41,5 @@ open another terminal and enter the following commands
 ![image](https://user-images.githubusercontent.com/96743681/232312097-97b0b079-4225-4a7f-84b2-a0c5f39cd2cb.png)
 
 
-You can always [open an issue]([#https://github.com/ChaitanyaD48/FarmOre-deploy/issues]) if you have any questions or open a discussion. Thanks for using FarmOre!
+You can always [open an issue]([#https://github.com/ChaitanyaD48/FarmOre-deploy/issues]) if you have any questions or open a discussion. <br> Thanks for using FarmOre!
 
