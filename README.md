@@ -42,5 +42,6 @@ open another terminal and enter the following commands
 ![image](https://user-images.githubusercontent.com/96743681/232312097-97b0b079-4225-4a7f-84b2-a0c5f39cd2cb.png)
 
 
-You can always [open an issue]([#https://github.com/ChaitanyaD48/FarmOre-deploy/issues]) if you have any questions or open a discussion. <br> Thanks for using FarmOre!
+You can always [open an issue]([#https://github.com/ChaitanyaD48/FarmOre-deploy/issues]) if you have any questions or open a discussion. <br> 
+Thanks for using FarmOre!
 
